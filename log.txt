@@ -1,0 +1,180 @@
+Getting env variables for app tracker-allocations-jimesh in org Pcf-training / space training as prajapati.jimesh@wipro.com...
+OK
+
+System-Provided:
+{
+ "VCAP_SERVICES": {
+  "p-circuit-breaker-dashboard": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "amqp": {
+      "dashboard_url": "https://pivotal-rabbitmq.system.dev.pcf-aws.com/#/login/3f55dace-73d6-4297-9935-e30008d5e008/tsoOgrsb_TgamZ9hg-GIJXhnBMlpfR0_",
+      "hostname": "192.168.64.31",
+      "hostnames": [
+       "192.168.64.31"
+      ],
+      "http_api_uri": "https://3f55dace-73d6-4297-9935-e30008d5e008:tsoOgrsb_TgamZ9hg-GIJXhnBMlpfR0_@pivotal-rabbitmq.system.dev.pcf-aws.com/api/",
+      "http_api_uris": [
+       "https://3f55dace-73d6-4297-9935-e30008d5e008:tsoOgrsb_TgamZ9hg-GIJXhnBMlpfR0_@pivotal-rabbitmq.system.dev.pcf-aws.com/api/"
+      ],
+      "password": "tsoOgrsb_TgamZ9hg-GIJXhnBMlpfR0_",
+      "protocols": {
+       "amqp": {
+        "host": "192.168.64.31",
+        "hosts": [
+         "192.168.64.31"
+        ],
+        "password": "tsoOgrsb_TgamZ9hg-GIJXhnBMlpfR0_",
+        "port": 5672,
+        "ssl": false,
+        "uri": "amqp://3f55dace-73d6-4297-9935-e30008d5e008:tsoOgrsb_TgamZ9hg-GIJXhnBMlpfR0_@192.168.64.31:5672/f44dbd86-84c9-495f-852d-6494181e3edc",
+        "uris": [
+         "amqp://3f55dace-73d6-4297-9935-e30008d5e008:tsoOgrsb_TgamZ9hg-GIJXhnBMlpfR0_@192.168.64.31:5672/f44dbd86-84c9-495f-852d-6494181e3edc"
+        ],
+        "username": "3f55dace-73d6-4297-9935-e30008d5e008",
+        "vhost": "f44dbd86-84c9-495f-852d-6494181e3edc"
+       },
+       "management": {
+        "host": "192.168.64.31",
+        "hosts": [
+         "192.168.64.31"
+        ],
+        "password": "tsoOgrsb_TgamZ9hg-GIJXhnBMlpfR0_",
+        "path": "/api/",
+        "port": 15672,
+        "ssl": false,
+        "uri": "http://3f55dace-73d6-4297-9935-e30008d5e008:tsoOgrsb_TgamZ9hg-GIJXhnBMlpfR0_@192.168.64.31:15672/api/",
+        "uris": [
+         "http://3f55dace-73d6-4297-9935-e30008d5e008:tsoOgrsb_TgamZ9hg-GIJXhnBMlpfR0_@192.168.64.31:15672/api/"
+        ],
+        "username": "3f55dace-73d6-4297-9935-e30008d5e008"
+       }
+      },
+      "ssl": false,
+      "uri": "amqp://3f55dace-73d6-4297-9935-e30008d5e008:tsoOgrsb_TgamZ9hg-GIJXhnBMlpfR0_@192.168.64.31/f44dbd86-84c9-495f-852d-6494181e3edc",
+      "uris": [
+       "amqp://3f55dace-73d6-4297-9935-e30008d5e008:tsoOgrsb_TgamZ9hg-GIJXhnBMlpfR0_@192.168.64.31/f44dbd86-84c9-495f-852d-6494181e3edc"
+      ],
+      "username": "3f55dace-73d6-4297-9935-e30008d5e008",
+      "vhost": "f44dbd86-84c9-495f-852d-6494181e3edc"
+     },
+     "dashboard": "https://hystrix-31024843-d515-4580-b1e9-097136774041.apps.dev.pcf-aws.com",
+     "stream": "https://turbine-31024843-d515-4580-b1e9-097136774041.apps.dev.pcf-aws.com"
+    },
+    "instance_name": "tracker-circuit-breaker-dashboard",
+    "label": "p-circuit-breaker-dashboard",
+    "name": "tracker-circuit-breaker-dashboard",
+    "plan": "standard",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "circuit-breaker",
+     "hystrix-amqp",
+     "spring-cloud"
+    ],
+    "volume_mounts": []
+   }
+  ],
+  "p-identity": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "auth_domain": "https://login.system.dev.pcf-aws.com",
+     "client_id": "78bc5e8d-defb-434c-b0b5-961e8a20f96f",
+     "client_secret": "0acce0bb-1f29-40fc-a8cd-f52fd60fa50f"
+    },
+    "instance_name": "tracker-sso",
+    "label": "p-identity",
+    "name": "tracker-sso",
+    "plan": "uaa",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [],
+    "volume_mounts": []
+   }
+  ],
+  "p-service-registry": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "access_token_uri": "https://p-spring-cloud-services.uaa.system.dev.pcf-aws.com/oauth/token",
+     "client_id": "p-service-registry-bed8f8aa-c585-430c-8145-3fbeeba01319",
+     "client_secret": "nF7Yr5GDfazp",
+     "uri": "https://eureka-ba8f6e32-596d-4463-becb-9f98f0271039.apps.dev.pcf-aws.com"
+    },
+    "instance_name": "tracker-service-registry",
+    "label": "p-service-registry",
+    "name": "tracker-service-registry",
+    "plan": "standard",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "eureka",
+     "discovery",
+     "registry",
+     "spring-cloud"
+    ],
+    "volume_mounts": []
+   }
+  ],
+  "p.mysql": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "hostname": "q-n4s3y1.q-g27492.bosh",
+     "jdbcUrl": "jdbc:mysql://q-n4s3y1.q-g27492.bosh:3306/service_instance_db?user=c57ae66a799140acad072d6f574b90e2\u0026password=gx0j9n33qbj3j3on\u0026useSSL=false",
+     "name": "service_instance_db",
+     "password": "gx0j9n33qbj3j3on",
+     "port": 3306,
+     "uri": "mysql://c57ae66a799140acad072d6f574b90e2:gx0j9n33qbj3j3on@q-n4s3y1.q-g27492.bosh:3306/service_instance_db?reconnect=true",
+     "username": "c57ae66a799140acad072d6f574b90e2"
+    },
+    "instance_name": "tracker-allocations-database",
+    "label": "p.mysql",
+    "name": "tracker-allocations-database",
+    "plan": "db-small",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "mysql"
+    ],
+    "volume_mounts": []
+   }
+  ]
+ }
+}
+
+{
+ "VCAP_APPLICATION": {
+  "application_id": "11d097fc-b1b0-4899-b41d-1a5f020f6d0e",
+  "application_name": "tracker-allocations-jimesh",
+  "application_uris": [
+   "allocations-pal-jimesh-3004.apps.dev.pcf-aws.com"
+  ],
+  "application_version": "3e5c632f-3a4c-43be-8379-31a2f81c75bb",
+  "cf_api": "https://api.system.dev.pcf-aws.com",
+  "limits": {
+   "disk": 1024,
+   "fds": 16384,
+   "mem": 1024
+  },
+  "name": "tracker-allocations-jimesh",
+  "space_id": "e0bb93f1-90bb-47cf-9ec1-60af065a3afb",
+  "space_name": "training",
+  "uris": [
+   "allocations-pal-jimesh-3004.apps.dev.pcf-aws.com"
+  ],
+  "users": null,
+  "version": "3e5c632f-3a4c-43be-8379-31a2f81c75bb"
+ }
+}
+
+User-Provided:
+GRANT_TYPE: client_credentials
+JBP_CONFIG_OPEN_JDK_JRE: { jre: { version: 11.+ } }
+
+No running env variables have been set
+
+No staging env variables have been set
+
