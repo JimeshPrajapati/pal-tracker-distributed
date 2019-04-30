@@ -1,8 +1,8 @@
 applications:
-- name: tracker-registration
+- name: tracker-registration-jimesh
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
-  - route: registration-pal-jimesh.apps.dev.pcf-aws.com
+  - route: registration-pal-jimesh-3004.apps.dev.pcf-aws.com
   memory: 1G
   instances: 1
   env:

@@ -1,8 +1,8 @@
 applications:
-- name: tracker-allocations
+- name: tracker-allocations-jimesh
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-jimesh.apps.dev.pcf-aws.com
+  - route: allocations-pal-jimesh-3004.apps.dev.pcf-aws.com
   memory: 1G
   instances: 1
   env:
